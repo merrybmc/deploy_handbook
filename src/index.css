@@ -298,7 +298,18 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  max-width: 90%;
+  max-width: 85%;
+  min-width: 0;
+}
+
+.module-title-wrapper span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
 .module-icon-num {
@@ -350,8 +361,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
   transition: var(--transition);
   position: relative;
+  min-width: 0;
+}
+
+.lesson-item span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
 .lesson-item::before {

@@ -118,7 +118,7 @@ export default function Sidebar({
                 >
                   <div className="module-title-wrapper">
                     <span className="module-icon-num">{mIdx + 1}</span>
-                    <span style={{ fontSize: "0.85rem", fontWeight: "600", textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}>
+                    <span style={{ fontSize: "0.85rem", fontWeight: "600" }}>
                       {module.title.substring(module.title.indexOf(" ") + 1)}
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export default function Sidebar({
                           setIsOpen(false); // Close mobile menu on select
                         }}
                       >
-                        <span style={{ maxWidth: "80%", textOverflow: "ellipsis", overflow: "hidden", whiteSpace: "nowrap" }}>
+                        <span>
                           {section.title}
                         </span>
                         <span className="checkbox-indicator"></span>
